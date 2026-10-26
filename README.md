@@ -4,6 +4,8 @@
 
 API REST para encurtar URLs e acompanhar quantos cliques cada link recebeu. Fiz esse projeto pra praticar Spring Boot, banco de dados e testes.
 
+A API está no ar em https://encurtador-links-w99c.onrender.com (documentação em [/swagger-ui.html](https://encurtador-links-w99c.onrender.com/swagger-ui.html)). Ela roda no plano gratuito do Render com PostgreSQL no Neon, então a primeira requisição depois de um tempo parada pode demorar até um minuto.
+
 ## Tecnologias
 
 - Java 21 e Spring Boot 4
@@ -12,6 +14,7 @@ API REST para encurtar URLs e acompanhar quantos cliques cada link recebeu. Fiz 
 - Swagger para documentação
 - JUnit, Mockito e MockMvc nos testes
 - GitHub Actions rodando os testes a cada push
+- Docker, deploy no Render e banco no Neon
 
 ## Endpoints
 
@@ -54,6 +57,5 @@ Testes:
 
 ## Próximos passos
 
-- Deploy
 - Cache com Redis
 - Login com JWT
